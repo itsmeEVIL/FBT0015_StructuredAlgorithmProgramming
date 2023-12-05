@@ -1,6 +1,6 @@
 month = str(input("Enter the month name: ").lower())
 
-if month == "september" or month == "april" or month == "june" or month == "november":
+if month not in ["september", "april", "june", "november"]:
     numDays = 30
 elif month == "february":
     leapYear = str(input("Is it a leap year?(Y/n)").lower())
@@ -11,7 +11,7 @@ elif month == "february":
     else:
         print("Not a valid answer.")
         exit()
-elif month == "january" or month == "march" or month == "may" or month == "july" or month == "august" or month == "october" or month == "december":
+elif month not in ["january", "march", "may", "july", "august", "october", "december"]:
     numDays = 31
 else:
     print("Not a valid month.")
@@ -20,7 +20,7 @@ else:
 i = 1
 apiReading = 0
 while i <= numDays:
-    api = int(input(f"Enter the api readings for day {i}: "))
+    apiReading = int(input(f"Enter the api readings for day {i}: "))
 
     if 0 <= apiReading <= 50:
         status = "Good"

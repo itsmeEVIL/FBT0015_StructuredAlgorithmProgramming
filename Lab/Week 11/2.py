@@ -24,8 +24,10 @@ Output:
 
 inside func_a
 None
+
 inside func_b
 7
+
 inside func_c
 inside func_a
 None
@@ -68,10 +70,16 @@ Output:
 
 2
 8
+
 after call 1 5
+
 5
 6
+
 after call 2 5
+
+
+
 after call 3 5
 
 """
